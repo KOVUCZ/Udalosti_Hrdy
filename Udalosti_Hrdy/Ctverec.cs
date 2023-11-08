@@ -45,7 +45,7 @@ namespace Udalosti_Hrdy
         {
             timer.Interval = new TimeSpan(0, 0, random.Next(1, 6));
             vybranaBarva = random.Next(0, barvy.Count);
-            BarvaZmenena?.Invoke();
+            BarvaZmenena?.Invoke(); 
         }
 
     }
