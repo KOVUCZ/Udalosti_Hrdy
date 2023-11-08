@@ -28,6 +28,8 @@ namespace Udalosti_Hrdy
         
         public double Velikost { get; private set; }
         public Brush Barva { get => barvy[vybranaBarva]; }
+
+        public Action? BarvaZmenena; 
         
         
         public Ctverec(double velikost)
@@ -41,7 +43,8 @@ namespace Udalosti_Hrdy
 
         private void Timer_Tick(object? sender, EventArgs e)
         {
-            timer.Interval = new 
+            timer.Interval = new TimeSpan(0, 0, random.Next(1, 6));
+            vybranaBarva = random.Next(0, barvy.Count);
         }
 
     }
