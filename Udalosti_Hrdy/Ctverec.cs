@@ -35,6 +35,13 @@ namespace Udalosti_Hrdy
             Velikost = velikost;
             timer = new DispatcherTimer();
             timer.Interval = new TimeSpan(0, 0, random.Next(1, 6));
+            timer.Tick += Timer_Tick;
+            timer.Start();
+        }
+
+        private void Timer_Tick(object? sender, EventArgs e)
+        {
+            timer.Interval = new 
         }
 
     }
