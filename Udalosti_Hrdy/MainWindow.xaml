@@ -18,6 +18,6 @@
             <RowDefinition/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
-        <Canvas Name="Platno" Grid.Column="1" Grid.Row="1" Background="aqua" />
+        <Canvas Name="Platno" Grid.Column="1" Grid.Row="1" Background="aqua" /> 
     </Grid>
 </Window>
