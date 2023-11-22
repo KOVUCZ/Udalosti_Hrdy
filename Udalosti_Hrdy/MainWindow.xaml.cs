@@ -48,7 +48,7 @@ namespace Udalosti_Hrdy
             NaklesliCtverce();
         }
 
-        public void NaklesliCtverce()
+        public void NaklesliCtverce() 
         {
             Platno.Children.Clear();
             foreach(Ctverec ctverec in ctverce)
