@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows.Threading;
+
 
 namespace Udalosti_Hrdy
 {
@@ -27,6 +29,7 @@ namespace Udalosti_Hrdy
         private Random random = new Random();
         
         public double Velikost { get; private set; }
+        public Point Umisteni { get; set; }
         public Brush Barva { get => barvy[vybranaBarva]; }
 
         public Action? BarvaZmenena; 

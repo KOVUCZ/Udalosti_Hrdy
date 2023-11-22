@@ -20,9 +20,23 @@ namespace Udalosti_Hrdy
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random random = new Random();
+        List<Ctverec> ctverce = new List<Ctverec>();
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        public void GenerujCtvere(int pocet)
+        {
+            for (int i = 0; i < pocet; i++)
+            {
+                Ctverec ctverec = new Ctverec(random.Next(30,70));
+                var x = random.NextDouble();
+                ctverec.Umisteni = new Point();
+
+            }
         }
     }
 }
